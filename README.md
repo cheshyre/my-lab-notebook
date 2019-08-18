@@ -67,7 +67,7 @@ python3 make_individual_pdfs.py [markdown_file]
 python3 make_labbook_pdf.py
 ```
 
-# Feedback/bugs
+## Feedback/bugs
 
 If you have any feedback or notice a bug, please feel free to reach out and/or [open an issue](https://github.com/cheshyre/my-lab-notebook/issues).
 Also, if you can improve the design of the project, you are welcome to contribute.
