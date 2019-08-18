@@ -2,6 +2,7 @@
 from __future__ import unicode_literals
 
 from sys import argv
+from sys import platform
 import subprocess
 import json
 import os.path
@@ -29,11 +30,14 @@ if directory[-1] == "/":
     directory = directory[:-1]
 
 # Create general path reference for bash commands
-directory_bash = (
-    directory.replace("~/Documents", r"$(xdg-user-dir DOCUMENTS)")
-    .replace("~/documents", r"$(xdg-user-dir DOCUMENTS)")
-    .replace("~", r"$HOME")
-)
+if platform == "linux":
+    directory_bash = (
+        directory.replace("~/Documents", r"$(xdg-user-dir DOCUMENTS)")
+        .replace("~/documents", r"$(xdg-user-dir DOCUMENTS)")
+        .replace("~", r"$HOME")
+    )
+else:
+    directory_bash = directory.replace("~", r"$HOME")
 
 # Set up directory structure
 subprocess.run(["mkdir", "-p", directory_bash])
