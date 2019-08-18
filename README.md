@@ -11,7 +11,7 @@ Soon I will properly fork this and redistribute with the appropriate license.
 Clone this repository. Then just run:
 
 ```
-./install.sh
+bash install.sh
 ```
 
 from the command-line.
