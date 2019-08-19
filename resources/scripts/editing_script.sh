@@ -1,7 +1,7 @@
 #!/bin/bash
 LABBOOK_ROOT=DIRECTORY
 
-CUR_FILE="$(date +%Y/%m/%d/%F_%T).md"
+CUR_FILE="$(date +%Y/%m/%d/%F_%H_%M_%S).md"
 
 # This avoids the problem of hour, day, month, year boundary conditions
 CUR_YEAR="$(echo $CUR_FILE | cut -f1 -d"/")"
