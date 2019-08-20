@@ -40,7 +40,7 @@ Here, `directory` is the directory where the labbook should be stored.
 `editor` specifies the command-line command to open the new labbook file.
 For vim users, this would be `"vim"`.
 For Sublime Text users, this would be `"subl"`, assuming you have the command-line helper set up.
-For neovim users, this would be `"neovim"`.
+For neovim users, this would be `"nvim"`.
 Finally, `command_name` specifies the name the command should have that opens a new entry in the labbook for editing.
 A shell script by this name will be placed in `~/.local/bin` during the labbook creation process.
 
@@ -60,9 +60,10 @@ so you can change everything once you are in the editor.
 
 Markdown files are saved in the labbook directory under the `entries` directory.
 Output PDF files are generated in the `pdf` directory.
-These can be generated using the Makefile (currently not working) or the Python scripts in the `scripts` directory:
+These can be generated using the Makefile or the Python scripts in the `scripts` directory:
 
 ```
+make all
 python3 make_individual_pdfs.py [markdown_file]
 python3 make_labbook_pdf.py
 ```
