@@ -1,0 +1,3 @@
+[submodule "eisvogel-physics"]
+	path = eisvogel-physics
+	url = https://github.com/cheshyre/eisvogel-physics
