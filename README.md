@@ -1,5 +1,10 @@
 # my-lab-notebook
 
+**This project is no longer maintained.**
+It worked well enough for single setups,
+but eventually it became clear that it was too fragile with respect to updates of the underlying tools
+and didn't work well enough when syncing between multiple setups.
+
 ## A note regarding `eisvogel_physics`
 
 `eisvogel_physics` is a slightly modified version of [eisvogel](https://github.com/Wandmalfarbe/pandoc-latex-template), edited to include the standard physics Latex package.
